@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Netflix Sans;
+  src: url(../fonts/NetflixSansRegular.ttf);
+}
+@font-face {
+  font-family: Netflix Sans-Medium;
+  src: url(../fonts/NetflixSansMedium.ttf);
+}
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+
+/*Elementos base*/
+
+body {
+  font-family: 'Netflix Sans';
+  color: white;
+}
+
+.bg-banner {
+  background: linear-gradient(to right, rgba(14,14,14,.80),rgba(14,14,14,0)75%), url('/assets/img/banner-the-witcher-2.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--preto);
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  background: linear-gradient(rgba(5, 5, 5, 1), rgba(0,0,0,0)100%);
+}
+
+header .logo {
+  margin-left: 53px;
+}
+
+header nav {
+  font-size: 14px;
+  margin-left: 44px;
+  margin-bottom: 5px;
+}
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 16px;
+}
+
+header nav a:hover {
+  color: #AAA;
+}
+
+/*Filme Principal*/
+
+.filme-principal {
+  font-size: 16px;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.filme-principal .container {
+  margin-left: 50px;
+  display: flex;
+  height: 30vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .container .text {
+  width: 500px;
+
+}
+
+.filme-principal .titulo {
+  font-size: 40px;
+  margin-top: 15%;
+}
+
+.filme-principal .sinopse {
+  margin-top: 5%;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+button {
+  font-family: 'Netflix Sans-Medium';
+}
+
+.filme-principal .botoes {
+  margin-top: 5%;
+}
+
+.botao-assistir {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.text-play-buttom {
+  margin-left: 5px;
+}
+
+.botao-info {
+  background-color: rgba(255, 255, 255, .30);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 4px;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.text-info-buttom {
+  margin-left: 5px;
+}
+
+.botao-assistir:hover {
+  background-color: #AAA;
+}
+
+.botao-info:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.box-filme {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.carrossel-filmes {
+  padding-left: 50px;
+  padding-right: 50px;
+  background: linear-gradient( to bottom, rgba(14,14,14,0), rgba(14,14,14,1)40%);
+}
