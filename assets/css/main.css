@@ -25,7 +25,7 @@ body {
 }
 
 .bg-banner {
-  background: linear-gradient(to right, rgba(14,14,14,.80),rgba(14,14,14,0)75%), url(/assets/img/banner-the-witcher.jpg);
+  background: linear-gradient(to right, rgba(14,14,14,.80),rgba(14,14,14,0)75%), url(/assets/img/filme1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: var(--preto);
